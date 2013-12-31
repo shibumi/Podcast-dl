@@ -24,7 +24,7 @@
 # GPG: E2C0DC2A
 
 #Download archive-file
-http://logbuch-netzpolitik.de/archiv
+wget http://logbuch-netzpolitik.de/archiv
 
 #grep podcast-files from archive-file
 cat archiv | egrep -o '(logbuch-netzpolitik\.de/lnp[0-9][0-9][0-9][^"[:space:]]+)' > FILE
