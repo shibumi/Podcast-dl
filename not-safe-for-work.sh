@@ -27,7 +27,7 @@
 wget http://not-safe-for-work.de/archiv
 
 #grep podcast-files from archive-file
-cat archiv | egrep -o '(not-safe-for-work\.de/nfsw[0-9][0-9][0-9][^"[:space:]]+)' > FILE
+cat archiv | egrep -o '(not-safe-for-work\.de/nsfw[0-9][0-9][0-9][^"[:space:]]+)' > FILE
 
 #clean up urls
 sed 's/<\/a>//g' FILE > archiv
@@ -43,7 +43,7 @@ rm archiv
 #downloading podcast files...
 for i in $(cat FILE)
 do
-	wget "http://meta.metaebene.me/media/nfsw/"$i".oga"
+	wget "http://meta.metaebene.me/media/nsfw/"$i".oga"
 done
 
 
