@@ -8,7 +8,7 @@ I am supporting at the moment:
 * cre.fm with Tim Pritlove
 * logbuch-netzpolitik with Tim Pritlove and Linus Neumann // not supported at the moment
 * freakshow.fm with Tim Pritlove, Denis Ahrens, hukl, roddi and Clemens Schrimpe
-
+* not-safe-for-work.de with Tim Pritlove and Holger Klein
 
 In case of complaint feel free to send me an email. We can talk about it :)
 
