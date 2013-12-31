@@ -1,6 +1,6 @@
 #!/bin/zsh
 #
-# lautsprecher.sh - Download all der-lautsprecher podcasts
+# diegesellschafter.sh - Download all Die-Gesellschafter podcasts
 #
 # Copyright (c) 2013 by Christian Rebischke <Chris.Rebischke@gmail.com>
 #
@@ -24,29 +24,15 @@
 # GPG: E2C0DC2A
 
 #Download archive-file
-wget http://der-lautsprecher.de/archiv
+wget http://metaebene.me/diegesellschafter/archiv/
 
 #grep podcast-files from archive-file
-cat archiv | egrep -o '(raumzeit-podcast\.de/ls[0-9][0-9][0-9][^"[:space:]]+)' > FILE
+cat archiv | egrep -o '(metaebene\.me/dg[0-9][0-9][0-9][^"[:space:]]+)' > FILE
 
 #clean up urls
 sed 's/<\/a>//g' FILE > archiv
 sed 's/#.*$//g' archiv > FILE
 cut -d"/" -f2 FILE > archiv
-
-#adding missing podcast files
-echo "ls000-der-lautsprecher" >> archiv
-echo "ls001-audioformate-feeds-itunes" >> archiv
-echo "ls002-der-gute-ton" >> archiv
-echo "ls003-podcast-publishing" >> archiv
-echo "ls004-mischpulte" >> archiv
-echo "ls005-aufnahmekonzepte" >> archiv
-echo "ls006-open-source-tools" >> archiv
-echo "ls007-auphonic" >> archiv
-echo "ls008-bitlove" >> archiv
-echo "ls009-sendungsplanung" >> archiv
-echo "ls010-podlove" >> archiv
-
 
 #sort everything and prepare download
 cat archiv | sort -u > FILE
@@ -57,7 +43,7 @@ rm archiv
 #downloading podcast files...
 for i in $(cat FILE)
 do
-	wget "http://meta.metaebene.me/media/lautsprecher/"$i".oga"
+	wget "http://meta.metaebene.me/media/dg/"$i".oga"
 done
 
 
