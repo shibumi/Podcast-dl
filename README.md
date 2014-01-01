@@ -4,17 +4,17 @@ Podcast-dl is a collection of download-scripts for the best german podcasts.
 
 I am supporting at the moment:
 
-* alternativlos.org with Frank Rieger and Fefe
-* cre.fm with Tim Pritlove
-* freakshow.fm with Tim Pritlove, Denis Ahrens, hukl, roddi and Clemens Schrimpe
-* not-safe-for-work.de with Tim Pritlove and Holger Klein
-* raumzeit-podcast.de with Tim Pritlove, the ESA and the DLR
-* der-lautsprecher.de with Tim Pritlove
-* metaebene.me/diegesellschafter with Tim pritlove
-
+* http://alternativlos.org with Frank Rieger and Fefe
+* http://cre.fm with Tim Pritlove
+* http://freakshow.fm with Tim Pritlove, Denis Ahrens, hukl, roddi and Clemens Schrimpe
+* http://not-safe-for-work.de with Tim Pritlove and Holger Klein
+* http://raumzeit-podcast.de with Tim Pritlove, the ESA and the DLR
+* http://der-lautsprecher.de with Tim Pritlove
+* http://metaebene.me/diegesellschafter with Tim pritlove
+* http://logbuch-netzpolitik.de with Tim Pritlove and Linus Neumann
+ 
 ***Coming soon...***
 
-* logbuch-netzpolitik.de with Tim Pritlove and Linus Neumann 
 * http://newz-of-the-world.com/ with Tim Pritlove ( in english)
 * Kolophon (http://community.oreilly.de/blog/kolophon-der-podcast/) with Tim Pritlove and Guests
 
