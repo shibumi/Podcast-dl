@@ -24,10 +24,8 @@
 # GPG: E2C0DC2A
 
 
-n=1
-for i in $(seq 0 29)
+for i in $(seq 1 30)
 do
-	wget "http://alternativlos.cdn.as250.net/alternativlos-${n}.ogg"
-	let "n++"
+	wget "http://alternativlos.cdn.as250.net/alternativlos-${i}.ogg"
 done
 
