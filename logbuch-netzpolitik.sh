@@ -1,6 +1,6 @@
 #!/bin/zsh
 #
-# cre.sh - Download all cre.fm podcasts
+# logbuch-netzpolitik.sh - Download all logbuch-netzpolitik podcasts
 #
 # Copyright (c) 2013 by Christian Rebischke <Chris.Rebischke@gmail.com>
 #
