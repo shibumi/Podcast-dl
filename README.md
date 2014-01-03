@@ -12,10 +12,10 @@ I am supporting at the moment:
 * http://der-lautsprecher.de with Tim Pritlove
 * http://metaebene.me/diegesellschafter with Tim pritlove
 * http://logbuch-netzpolitik.de with Tim Pritlove and Linus Neumann
+* http://newz-of-the-world.com/ with Tim Pritlove ( in english )
  
 ***Coming soon...***
 
-* http://newz-of-the-world.com/ with Tim Pritlove ( in english)
 * Kolophon (http://community.oreilly.de/blog/kolophon-der-podcast/) with Tim Pritlove and Guests
 
 In case of complaint feel free to send me an email. We can talk about it :)
