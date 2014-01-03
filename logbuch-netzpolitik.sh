@@ -27,30 +27,30 @@
 wget http://logbuch-netzpolitik.de/archiv
 
 #grep podcast-files from archive-file
-echo $(cat ./archiv | sed "s/^M/\n/g" | grep '<a href="http://logbuch-netzpolitik.de/lnp' | sed "s/^.*>\(.*\)<\/a>.*/\1/g") > FILE
+echo $(cat ./archiv | sed "s/^M/\n/g" | grep '<a href="http://logbuch-netzpolitik.de/lnp' | sed "s/^.*>\(.*\)<\/a>.*/\1/g") > LOG
 
 #clean up urls
-cat FILE | sed "s/LNP/\nLNP/g" > archiv
-cat archiv | tr [:upper:] [:lower:] > FILE
-cat FILE | sed "s/ /-/g" > archiv
-cat archiv | sed "s/ü/ue/g" > FILE
-cat FILE | sed "s/ä/ae/g" > archiv
-cat archiv | sed "s/\!//g" > FILE
-cat FILE | sed "s/\[1\]/1/g" > archiv
-cat archiv | sed "s/ó/o/g" > FILE
-cat FILE | sed "s/l&#8217;/l-/g" > archiv
-cat archiv | sed "s/&#8217;//g" > FILE
-sed -i '1d' FILE 
-cat FILE | rev | cut -c 2- | rev > archiv
-cat archiv | sed "s/,//g" > FILE
-cat FILE | sed "s/\.//g" > archiv
-cat archiv | sed "s/ß/ss/g" > FILE
+cat LOG | sed "s/LNP/\nLNP/g" > archiv
+cat archiv | tr [:upper:] [:lower:] > LOG
+cat LOG | sed "s/ /-/g" > archiv
+cat archiv | sed "s/ü/ue/g" > LOG
+cat LOG | sed "s/ä/ae/g" > archiv
+cat archiv | sed "s/\!//g" > LOG
+cat LOG | sed "s/\[1\]/1/g" > archiv
+cat archiv | sed "s/ó/o/g" > LOG
+cat LOG | sed "s/l&#8217;/l-/g" > archiv
+cat archiv | sed "s/&#8217;//g" > LOG
+sed -i '1d' LOG 
+cat LOG | rev | cut -c 2- | rev > archiv
+cat archiv | sed "s/,//g" > LOG
+cat LOG | sed "s/\.//g" > archiv
+cat archiv | sed "s/ß/ss/g" > LOG
 
 #clean up
 rm archiv
 
 #downloading podcast files...
-for i in $(cat FILE)
+for i in $(cat LOG)
 do
 	wget "http://meta.metaebene.me/media/lnp/"$i".oga"
 done

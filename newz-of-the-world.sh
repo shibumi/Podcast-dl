@@ -27,19 +27,19 @@
 wget http://newz-of-the-world.com/archive
 
 #grep podcast-files from archive-file
-cat archive | egrep -o '(metaebene\.me/media/newz/newz[0-9][0-9][0-9].*\.jpg)' > FILE
+cat archive | egrep -o '(metaebene\.me/media/newz/newz[0-9][0-9][0-9].*\.jpg)' > LOG
 
 #clean up urls
-cut -d"/" -f4 FILE > archive
-cut -d"." -f1 archive > FILE
+cut -d"/" -f4 LOG > archive
+cut -d"." -f1 archive > LOG
 
 #sort everything and prepare download
-cat FILE | sort -u > archive
-cat archive > FILE
+cat LOG | sort -u > archive
+cat archive > LOG
 #clean up
 rm archive
 #downloading podcast files...
-for i in $(cat FILE)
+for i in $(cat LOG)
 do
 	wget "http://meta.metaebene.me/media/newz/"$i".oga"
 done

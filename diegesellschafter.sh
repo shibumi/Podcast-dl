@@ -27,21 +27,21 @@
 wget http://metaebene.me/diegesellschafter/archiv/
 
 #grep podcast-files from archive-file
-cat archiv | egrep -o '(metaebene\.me/dg[0-9][0-9][0-9][^"[:space:]]+)' > FILE
+cat archiv | egrep -o '(metaebene\.me/dg[0-9][0-9][0-9][^"[:space:]]+)' > LOG
 
 #clean up urls
-sed 's/<\/a>//g' FILE > archiv
-sed 's/#.*$//g' archiv > FILE
-cut -d"/" -f2 FILE > archiv
+sed 's/<\/a>//g' LOG > archiv
+sed 's/#.*$//g' archiv > LOG
+cut -d"/" -f2 LOG > archiv
 
 #sort everything and prepare download
-cat archiv | sort -u > FILE
+cat archiv | sort -u > LOG
 
 #clean up
 rm archiv
 
 #downloading podcast files...
-for i in $(cat FILE)
+for i in $(cat LOG)
 do
 	wget "http://meta.metaebene.me/media/dg/"$i".oga"
 done
