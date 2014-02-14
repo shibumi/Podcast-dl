@@ -2,7 +2,7 @@
 #
 # alternativlos.sh - Download all alternativlos podcasts
 #
-# Copyright (c) 2013 by Christian Rebischke <Q2hyaXMuUmViaXNjaGtlQGdtYWlsLmNvbQo= | base64 -d>
+# Copyright (c) 2013 by Christian Rebischke <echo Q2hyaXMuUmViaXNjaGtlQGdtYWlsLmNvbQo= | base64 -d>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -19,7 +19,7 @@
 #
 #======================================================================
 # Author: Christian Rebischke
-# Email : Q2hyaXMuUmViaXNjaGtlQGdtYWlsLmNvbQo= | base64 -d
+# Email : echo Q2hyaXMuUmViaXNjaGtlQGdtYWlsLmNvbQo= | base64 -d
 # Github: www.github.com/Shibumi
 # GPG: E2C0DC2A
 
