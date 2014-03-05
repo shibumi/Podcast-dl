@@ -24,13 +24,45 @@
 # GPG: E2C0DC2A
 
 
-for i in $(seq 1 99)
+for i in $(seq 1 9)
 do
-	wget "http://alternativlos.cdn.as250.net/alternativlos-${i}.ogg"
+  wget "http://episodes.n00bcore.de/NC00${i}.mp3"
+  if [ $? != 0 ] 
+    then 
+    wget "http://episodes.n00bcore.de/nc00${i}.mp3"
+    if [ $? != 0 ]
+      then
+      echo "Nothing to download"
+      exit 0
+      fi
+  fi
+done
+
+for i in $(seq 10 99)
+do 
+  wget "http://episodes.n00bcore.de/NC0${i}.mp3"
   if [ $? != 0 ]
     then
-    echo "nothing to download"
-    exit 0
+    wget "http://episodes.n00bcore.de/nc0${i}.mp3"
+    if [ $? != 0 ]
+      then
+      echo "Nothing to download"
+      exit 0
+      fi
+  fi
+done
+
+for i in $(100 999)
+do 
+  wget "http://episodes.n00bcore.de/NC${i}.mp3"
+  if [ $? != 0 ]
+    then
+    wget "http://episodes.n00bcore.de/nc${i}.mp3"
+    if [ $? != 0 ]
+      then 
+      echo "Nothing to download"
+      exit 0
+      fi
   fi
 done
 
