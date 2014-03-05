@@ -1,8 +1,8 @@
 #!/bin/zsh
 #
-# alternativlos.sh - Download all alternativlos podcasts
+# noobcore.sh - Download all noobcore podcasts
 #
-# Copyright (c) 2013 by Christian Rebischke <echo Q2hyaXMuUmViaXNjaGtlQGdtYWlsLmNvbQo= | base64 -d>
+# Copyright (c) 2014 by Christian Rebischke <echo Q2hyaXMuUmViaXNjaGtlQGdtYWlsLmNvbQo= | base64 -d>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
