@@ -22,7 +22,8 @@
 # Email : echo Q2hyaXMuUmViaXNjaGtlQGdtYWlsLmNvbQo= | base64 -d
 # Github: www.github.com/Shibumi
 # GPG: E2C0DC2A
-
+#
+# TODO: Better Regex!
 
 for i in $(seq 1 9)
 do
@@ -56,6 +57,9 @@ wget "http://chaosradio.ccc.de/chaosradio-complete.rss" -O archiv
 echo "Downloading the other files..."
 
 cat archiv | grep -o "http://chaosradio.ccc.de/archive/cr[0-9]\{3\}-[A-Za-z]*\.mp3" > LOG
+cat archiv | grep -o "http://chaosradio.ccc.de/archive/cr[0-9]\{3\}-[A-Za-z]*-[A-Za-z]*\.mp3" >> LOG
+cat archiv | grep -o "http://chaosradio.ccc.de/archive/cr[0-9]\{3\}-[A-Za-z]*-[A-Za-z]*-[A-Za-z]*\.mp3" >> LOG
+cat archiv | grep -o "http://chaosradio.ccc.de/archive/cr[0-9]\{3\}-[A-Za-z]*-[A-Za-z]*-[A-Za-z]*-[A-Za-z]*\.mp3" >> LOG
 
 for i in $(cat LOG)
 do
