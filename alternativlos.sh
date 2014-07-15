@@ -21,7 +21,7 @@
 # Author: Christian Rebischke
 # Email : echo Q2hyaXMuUmViaXNjaGtlQGdtYWlsLmNvbQo= | base64 -d
 # Github: www.github.com/Shibumi
-# GPG: E2C0DC2A
+#
 
 
 for i in $(seq 1 99)

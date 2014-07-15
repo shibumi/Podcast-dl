@@ -21,7 +21,7 @@
 # Author: Christian Rebischke
 # Email : echo Q2hyaXMuUmViaXNjaGtlQGdtYWlsLmNvbQo= | base64 -d
 # Github: www.github.com/Shibumi
-# GPG: E2C0DC2A
+#
 
 #Download archive-file
 wget http://metaebene.me/diegesellschafter/archiv/
